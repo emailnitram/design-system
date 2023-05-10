@@ -14,6 +14,12 @@ module.exports = {
     return true;
   },
 
+  option: {
+    babel: {
+      plugins: [require.resolve('ember-auto-import/babel-plugin')],
+    },
+  },
+
   included(app) {
     this._super.included.apply(this, arguments);
 
