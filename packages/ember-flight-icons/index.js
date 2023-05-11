@@ -10,16 +10,6 @@ const flightIconSprite = require('@hashicorp/flight-icons/svg-sprite/svg-sprite-
 module.exports = {
   name: require('./package').name,
 
-  isDevelopingAddon() {
-    return true;
-  },
-
-  option: {
-    babel: {
-      plugins: [require.resolve('ember-auto-import/babel-plugin')],
-    },
-  },
-
   included(app) {
     this._super.included.apply(this, arguments);
 
